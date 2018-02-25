@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // for and range can be using to both iterate over data structures and values received from a channel
-func main()  {
+func main() {
 
 	// iterating over two values in the queue channel
 	queue := make(chan string, 2)
