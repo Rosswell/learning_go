@@ -16,7 +16,7 @@ func worker(id int, jobs <-chan int, results chan<- int) {
 
 func main() {
 
-	// in order to use our pool of wokrers we need to send them work and collect their results. We make 2 channels for
+	// in order to use our pool of workers we need to send them work and collect their results. We make 2 channels for
 	// these purposes
 	jobs := make(chan int, 100)
 	results := make(chan int, 100)
