@@ -33,7 +33,8 @@ func closeFile(f *os.File) {
 
 func main() {
 	// immediately after getting a file object with createFile, we defer the closing of that file with closeFile. This
-	// will be executed at the end of the enclosing function(main), after writeFile has finished
+	// will be executed at the end of the enclosing function(main), after writeFile has finished. output confirms the
+	// order of operations
 	f := createFile("/tmp/defer.txt")
 	defer closeFile(f)
 	writeFile(f)
