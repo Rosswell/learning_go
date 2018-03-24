@@ -49,7 +49,7 @@ func main() {
 	b3 := make([]byte, 2)
 	n3, err := io.ReadAtLeast(f, b3, 2)
 	check(err)
-	fmt.Printf("%d bytes @ %d: %s\n", n3, o3)
+	fmt.Printf("%d bytes @ %d: %s\n", n3, o3, string(b3))
 
 	// there is no built-in rewind, but Seek(0,0) accomplishes this
 	_, err = f.Seek(0, 0)
