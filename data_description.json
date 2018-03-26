@@ -6,12 +6,12 @@
 	"skip": 0,
 	"meta": [
 		{ "type": "id", "index": 0, "name": "Name" },
-		{ "type": "integer", "index": 1, "name": "Cerebellum" },
-		{ "type": "integer", "index": 2, "name": "Cortex" },
-		{ "type": "integer", "index": 3, "name": "Gonadal" },
-		{ "type": "integer", "index": 4, "name": "Hippocampus" },
-		{ "type": "integer", "index": 5, "name": "Liver" },
-		{ "type": "integer", "index": 6, "name": "Striatum" }
+		{ "type": "float", "index": 7, "name": "Cerebellum_values" },
+		{ "type": "float", "index": 8, "name": "Cortex_values" },
+		{ "type": "float", "index": 9, "name": "Gonadal_values" },
+		{ "type": "float", "index": 10, "name": "Hippocampus_values" },
+		{ "type": "float", "index": 11, "name": "Liver_values" },
+		{ "type": "float", "index": 12, "name": "Striatum_values" }
 	],
 	"sets": [
 		{ "format": "binary", "start": 1, "end": 6 }
